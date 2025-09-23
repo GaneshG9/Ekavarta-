@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekavarta - AI Business Automation Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .features {
+            background: white;
+            padding: 80px 0;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .services {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #764ba2;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: #667eea;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .api-info {
+            background: #e3f2fd;
+            padding: 60px 0;
+        }
+        
+        .api-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .api-endpoint {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ekavarta</h1>
+                <p>AI-Powered Business Automation Platform</p>
+                <p>Revolutionizing Real Estate, Solar Energy & Digital Marketing with AI</p>
+                <a href="#features" class="btn">Explore Features</a>
+                <a href="/api/" class="btn btn-outline">View API</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Powerful AI Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🤖 AI Lead Management</h3>
+                    <p>Automatically qualify, score, and nurture leads using advanced AI algorithms. Track the complete customer journey from first contact to conversion.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📞 Cold Calling Automation</h3>
+                    <p>AI-powered cold calling in Hindi and English. Personalized scripts, sentiment analysis, and automatic follow-ups based on conversation outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Social Media Automation</h3>
+                    <p>Generate engaging content, schedule posts, and manage multiple social media platforms automatically. Increase engagement with AI-optimized content.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💬 WhatsApp & Telegram Integration</h3>
+                    <p>Seamless customer communication through WhatsApp Business API and Telegram bots. Automated responses and lead qualification.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Smart Analytics Dashboard</h3>
+                    <p>Real-time business insights, performance tracking, and AI-generated reports. Monitor traffic, conversions, and ROI from a single dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔗 n8n Workflow Integration</h3>
+                    <p>Connect with 300+ apps and services. Create complex automation workflows without coding. Streamline your business processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="api-info">
+        <div class="container">
+            <h2>API Endpoints</h2>
+            <div class="api-card">
+                <h3>Authentication</h3>
+                <div class="api-endpoint">POST /api/auth/register/ - User registration</div>
+                <div class="api-endpoint">POST /api/auth/login/ - User login</div>
+                <div class="api-endpoint">POST /api/auth/verify/ - Account verification</div>
+            </div>
+            <div class="api-card">
+                <h3>AI Automation</h3>
+                <div class="api-endpoint">POST /api/ai/generate-content/ - Generate social media content</div>
+                <div class="api-endpoint">POST /api/ai/schedule-cold-call/ - Schedule AI cold call</div>
+                <div class="api-endpoint">GET /api/ai/insights/ - Get AI insights</div>
+            </div>
+            <div class="api-card">
+                <h3>Integrations</h3>
+                <div class="api-endpoint">POST /api/integrations/whatsapp/webhook/ - WhatsApp webhook</div>
+                <div class="api-endpoint">POST /api/integrations/telegram/webhook/ - Telegram webhook</div>
+                <div class="api-endpoint">GET /api/integrations/social-accounts/ - Social media accounts</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ekavarta - AI Business Automation Platform. All rights reserved.</p>
+            <p>Empowering businesses with artificial intelligence and automation.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Load service categories
+        fetch('/api/categories/')
+            .then(response => response.json())
+            .then(data => {
+                const servicesGrid = document.getElementById('servicesGrid');
+                data.categories.forEach(category => {
+                    const serviceCard = document.createElement('div');
+                    serviceCard.className = 'service-card';
+                    serviceCard.innerHTML = `
+                        <h3>${category.name}</h3>
+                        <p>${category.description}</p>
+                        <p><strong>${category.services_count} Services Available</strong></p>
+                    `;
+                    servicesGrid.appendChild(serviceCard);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading services:', error);
+                document.getElementById('servicesGrid').innerHTML = `
+                    <div class="service-card">
+                        <h3>Real Estate</h3>
+                        <p>Complete real estate solutions including property management, buying, selling, and investment consulting.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Solar Energy</h3>
+                        <p>Solar panel installation, maintenance, and energy consulting services for residential and commercial properties.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Digital Marketing</h3>
+                        <p>Comprehensive digital marketing solutions including SEO, social media marketing, and online advertising.</p>
+                    </div>
+                `;
+            });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
