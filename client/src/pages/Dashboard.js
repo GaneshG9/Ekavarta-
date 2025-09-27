@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   Grid,
   Paper,
@@ -34,7 +34,7 @@ const Dashboard = () => {
   const [refreshKey, setRefreshKey] = useState(0);
 
   // Fetch dashboard data
-  const { data: dashboardData, isLoading: dashboardLoading } = useQuery(
+  const { data: dashboardData } = useQuery(
     ['dashboard', refreshKey],
     () => crmService.getDashboard(),
     {

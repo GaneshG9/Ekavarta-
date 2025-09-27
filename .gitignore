@@ -67,6 +67,8 @@ tmp/
 
 # Upload files
 uploads/
+public/uploads/
+client/public/uploads/
 
 # Session files
 sessions/
@@ -78,3 +80,26 @@ sessions/
 # WhatsApp session
 .wwebjs_auth/
 .wwebjs_cache/
+
+# Large media files (use Git LFS for versioning these)
+*.large
+large-assets/
+
+# Build artifacts
+build/
+dist/
+*.tgz
+*.tar.gz
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+
+# Large log files
+*.log.gz
+logs/*.log
+
+# Temporary large files
+*.tmp.large
+temp-large/
