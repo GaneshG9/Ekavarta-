@@ -237,10 +237,51 @@ SALESFORCE_CLIENT_SECRET=your_salesforce_client_secret
 
 ## 🚀 Deployment
 
+### Quick Deployment Options
+
+Choose the deployment method that best fits your needs:
+
+#### 1. **Heroku** (Recommended for beginners)
+```bash
+# Quick deploy to Heroku
+npm run deploy:heroku
+```
+
+#### 2. **Vercel** (Great for full-stack apps)
+```bash
+# Deploy to Vercel
+npm run deploy:vercel
+```
+
+#### 3. **Docker** (For containerized deployment)
+```bash
+# Build and run with Docker
+docker-compose up -d
+```
+
+### Large Files & Repository Management
+
+⚠️ **Important**: If your repository is approaching 2GB or contains large files:
+
+1. **Set up Git LFS** for large files:
+   ```bash
+   npm run lfs:install
+   ```
+
+2. **Use external storage** for uploads and media files
+3. **Consider repository splitting** for very large projects
+
+📖 **Detailed Guides:**
+- [📦 Large Files Management Guide](LARGE_FILES_GUIDE.md)
+- [🚀 Complete Deployment Guide](DEPLOYMENT.md)
+
 ### Production Build
 ```bash
 # Build the client
 npm run build
+
+# Build with optimization
+npm run build:optimize
 
 # Set environment to production
 export NODE_ENV=production
@@ -273,6 +314,35 @@ heroku config:set MONGODB_URI=your_mongodb_uri
 # Deploy
 git push heroku main
 ```
+
+### Environment Variables for Production
+
+Create a `.env` file with production values:
+```env
+NODE_ENV=production
+MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/ekavarta
+JWT_SECRET=your-super-secure-jwt-secret
+PORT=5000
+CLIENT_URL=https://your-domain.com
+```
+
+### Hosting Recommendations
+
+| Platform | Best For | File Size Limit | Cost |
+|----------|----------|----------------|------|
+| **Heroku** | Beginners | 500MB | Free tier available |
+| **Vercel** | Full-stack apps | 100MB per file | Free tier available |
+| **DigitalOcean** | Scalable apps | No limit | $5+/month |
+| **AWS EC2** | Enterprise | No limit | Pay-as-you-go |
+| **Google Cloud** | AI features | No limit | Free tier available |
+
+### Performance Optimization
+
+- Use **Git LFS** for large assets
+- Implement **CDN** for static files
+- Enable **gzip compression**
+- Configure **caching headers**
+- Use **image optimization**
 
 ## 🤝 Contributing
 
